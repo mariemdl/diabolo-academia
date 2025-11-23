@@ -1,0 +1,56 @@
+[
+  {
+    "id": "start",
+    "speaker": "Lucien",
+    "text": "Ah, {player}. I didn't expect to see a human here at Diabolo Academy.",
+    "image": "lucien_neutral",
+    "choices": [
+      {
+        "text": "I was looking for you.",
+        "affection": 5,
+        "next": "node_happy"
+      },
+      {
+        "text": "I got lost.",
+        "affection": 0,
+        "next": "node_annoyed"
+      }
+    ]
+  },
+  {
+    "id": "node_happy",
+    "speaker": "Lucien",
+    "text": "Looking for me? Hmph. I suppose I can spare a moment.",
+    "image": "lucien_happy",
+    "choices": [
+      {
+        "text": "You look cool today.",
+        "affection": 5,
+        "next": "end_good"
+      },
+      {
+        "text": "Nevermind, bye.",
+        "affection": -2,
+        "next": "end_neutral"
+      }
+    ]
+  },
+  {
+    "id": "node_annoyed",
+    "speaker": "Lucien",
+    "text": "Lost? Humans are so directionless. Get out of my sight.",
+    "image": "lucien_angry",
+    "choices": [
+      {
+        "text": "Sorry!",
+        "affection": 0,
+        "next": "end_neutral"
+      },
+      {
+        "text": "You're rude!",
+        "affection": -5,
+        "next": "end_bad"
+      }
+    ]
+  }
+]
